@@ -28,9 +28,20 @@ function login(){
         location.href = "dashboard.html";
     }
 }
+
+function cadastrar(e){
+    e.preventDefault();
+    
+    location.href = "cadastro.html";
+}
 // chama a função criada para validar o formulário
 document.getElementById("entrar")
     .addEventListener("click",  (e) => {
     e.preventDefault()
     validar();
+})
+
+document.getElementById("cadastrar")
+    .addEventListener("click",  (e) => {
+    e.preventDefault()
 })
