@@ -29,9 +29,8 @@ function login(){
     }
 }
 
-function cadastrar(e){
-    e.preventDefault();
-    
+function cadastrar(){
+    alert("Faça parte do nosso time :)");
     location.href = "cadastro.html";
 }
 // chama a função criada para validar o formulário
@@ -44,4 +43,5 @@ document.getElementById("entrar")
 document.getElementById("cadastrar")
     .addEventListener("click",  (e) => {
     e.preventDefault()
+    cadastrar();
 })
